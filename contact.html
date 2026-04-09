@@ -28,27 +28,27 @@
   <p><strong>Email :</strong> museejeangrossier@gmail.com</p>
   <p><strong>Téléphone :</strong> 06 21 22 78 72</p>
 
-  <!-- Formulaire (non fonctionnel sans backend, mais prêt pour la mise en forme) -->
-  <form action="#" method="post" style="max-width:600px; margin:20px auto; text-align:left;">
-    <label for="nom">Nom</label>
-    <input id="nom" name="nom" type="text" required
-           style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:4px;">
+ <form style="max-width:600px; margin:20px auto; text-align:left;">
+  <p style="color:#555; font-size:14px;">
+    Le formulaire sera bientôt disponible.  
+    En attendant, vous pouvez nous écrire à :
+    <a href="mailto:museejeanggrossie@gmail.com">museejeanggrossie@gmail.com</a>
+  </p>
 
-    <label for="email">Email</label>
-    <input id="email" name="email" type="email" required
-           style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:4px;">
+  <label for="nom">Nom</label>
+  <input id="nom" type="text" disabled style="width:100%; padding:10px; margin:8px 0;">
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required
-              style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:4px;"></textarea>
+  <label for="email">Email</label>
+  <input id="email" type="email" disabled style="width:100%; padding:10px; margin:8px 0;">
 
-    <button type="submit" style="background:#34495e; color:#fff; border:none; padding:10px 16px; border-radius:4px; cursor:pointer;">
-      Envoyer
-    </button>
-  </form>
+  <label for="message">Message</label>
+  <textarea id="message" rows="5" disabled style="width:100%; padding:10px; margin:8px 0;"></textarea>
 
-  <p style="font-size:14px; color:#555;">Astuce : vous pouvez remplacer l’attribut action par un service de formulaire (Formspree, Netlify Forms) pour recevoir les messages par email.</p>
-</div>
+  <button disabled style="background:#ccc; color:#666; border:none; padding:10px 16px; border-radius:4px;">
+    Formulaire en cours d’activation
+  </button>
+</form>
+
 
 <footer>
   museejeangrossier@gmail.com — 06 21 22 78 72
