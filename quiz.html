@@ -5,7 +5,35 @@
   <title>Quiz — Arts et Traditions Gérômois</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Message intégré */
+    #message-quiz {
+      display:none;
+      background:#f0f4f8;
+      border-left:4px solid #34495e;
+      padding:15px;
+      margin:20px 0;
+      font-size:18px;
+      color:#34495e;
+      border-radius:4px;
+    }
+
+    .sub-menu a {
+      cursor:pointer;
+    }
+  </style>
+
+  <script>
+    function showMessage() {
+      const msg = document.getElementById("message-quiz");
+      msg.style.display = "block";
+      msg.scrollIntoView({ behavior: "smooth" });
+      return false;
+    }
+  </script>
 </head>
+
 <body>
 
 <nav>
@@ -27,18 +55,22 @@
 
   <!-- Sous-menu Quiz -->
   <div class="sub-menu">
-    <a href="quiz1.html">Quiz 1 : La vie et l'oeuvre de Jean Grossier</a>
-    <a href="quiz2.html">Quiz 2 : Objets traditionnels</a>
-    <a href="quiz3.html">Quiz 3 : Le savoir-faire local</a>
-    <a href="quiz4.html">Quiz 4 : Le patois</a>
-    <a href="quiz5.html">Quiz 5 : Les coutumes</a>
-    <a href="quiz6.html">Quiz 6 : Nos chansons</a>
-    <a href="quiz7.html">Quiz 7 : Les Ménestrels de Gérardmer)</a>
-    <a href="quiz8.html">Quiz 8 : le Théâtre populaire</a>
+    <a onclick="return showMessage()">Quiz 1 : La vie et l'oeuvre de Jean Grossier</a>
+    <a onclick="return showMessage()">Quiz 2 : Objets traditionnels</a>
+    <a onclick="return showMessage()">Quiz 3 : Le savoir-faire local</a>
+    <a onclick="return showMessage()">Quiz 4 : Le patois</a>
+    <a onclick="return showMessage()">Quiz 5 : Les coutumes</a>
+    <a onclick="return showMessage()">Quiz 6 : Nos chansons</a>
+    <a onclick="return showMessage()">Quiz 7 : Les Ménestrels de Gérardmer</a>
+    <a onclick="return showMessage()">Quiz 8 : Le Théâtre populaire</a>
   </div>
 
-  <!-- Contenu placeholder -->
-  <p>Choisissez un quiz ci-dessus pour commencer. Chaque quiz comporte des questions à choix multiples.</p>
+  <!-- Message intégré -->
+  <div id="message-quiz">
+    <strong>Bientôt disponible</strong> — merci de patienter, les quiz sont en cours de préparation.
+  </div>
+
+  <p>Choisissez un quiz ci-dessus pour commencer. Chaque quiz comportera des questions à choix multiples.</p>
 </div>
 
 <footer>
