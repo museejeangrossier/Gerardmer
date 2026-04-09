@@ -5,7 +5,36 @@
   <title>Vos Idées</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Message d'information */
+    #message-idee {
+      background:#f0f4f8;
+      border-left:4px solid #34495e;
+      padding:15px;
+      margin:20px auto;
+      max-width:600px;
+      font-size:18px;
+      color:#34495e;
+      border-radius:4px;
+    }
+
+    /* Désactivation visuelle du formulaire */
+    .disabled-field {
+      background:#eee;
+      color:#777;
+      cursor:not-allowed;
+    }
+
+    .disabled-button {
+      background:#ccc !important;
+      color:#666 !important;
+      cursor:not-allowed !important;
+      border:none;
+    }
+  </style>
 </head>
+
 <body>
 
 <nav>
@@ -25,21 +54,33 @@
   <h1>Vos Idées</h1>
   <p>Partagez vos propositions et suggestions pour enrichir le musée et les traditions gérômoises.</p>
 
-  <form action="#" method="post" style="max-width:600px; margin:20px auto; text-align:left;">
+  <!-- Message intégré -->
+  <div id="message-idee">
+    <strong>Bientôt disponible</strong> — merci de patienter.  
+    En attendant, contactez‑nous directement par mail :  
+    <a href="mailto:museejeangrossier@gmail.com">museejeangrossier@gmail.com</a>  
+    ou par téléphone : <strong>06 21 22 78 72</strong>.
+  </div>
+
+  <!-- Formulaire désactivé -->
+  <form style="max-width:600px; margin:20px auto; text-align:left;">
     <label for="nom">Nom</label>
-    <input id="nom" name="nom" type="text" required style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:4px;">
+    <input id="nom" type="text" disabled class="disabled-field"
+           style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:4px;">
 
     <label for="idee">Votre idée</label>
-    <textarea id="idee" name="idee" rows="5" required style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:4px;"></textarea>
+    <textarea id="idee" rows="5" disabled class="disabled-field"
+              style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:4px;"></textarea>
 
-    <button type="submit" style="background:#34495e; color:#fff; border:none; padding:10px 16px; border-radius:4px; cursor:pointer;">
-      Envoyer
+    <button type="button" disabled class="disabled-button"
+            style="padding:10px 16px; border-radius:4px;">
+      Formulaire en cours d’activation
     </button>
   </form>
 </div>
 
 <footer>
-  museejeangrossier@gmail.com — 06 21 22 78 72
+  museejeanggrossier@gmail.com — 06 21 22 78 72
 </footer>
 
 </body>
