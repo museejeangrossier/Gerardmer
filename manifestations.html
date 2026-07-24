@@ -12,7 +12,7 @@
   <div class="nav-inner">
     <a href="index.html">Accueil</a>
     <a href="histoire.html">Notre Histoire</a>
-    <a href="manifestations.html">Manifestations</a>
+    <a href="manifestations.html">Agenda Culturel</a>
     <a href="vosidees.html">Vos Idées</a>
     <a href="musee.html">Le Musée</a>
     <a href="soutiens.html">Nos soutiens</a>
@@ -23,72 +23,12 @@
 
 <div class="container">
   <h1>Manifestations</h1>
-  <p>Expositions temporaires, évènements culturels, journée du patrimoine, animations... À compléter.</p>
-
-  <h2>Galerie photos</h2>
-
-  <!-- Galerie : tu peux ajouter autant d’images que tu veux -->
-  <div class="gallery">
-
-    <figure>
-      <img src="images/manifestation/photo1.jpg" alt="Photo 1" class="lightbox-img">
-      <figcaption>Légende de la photo 1</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/manifestation/photo2.jpg" alt="Photo 2" class="lightbox-img">
-      <figcaption>Légende de la photo 2</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/manifestation/photo3.jpg" alt="Photo 3" class="lightbox-img">
-      <figcaption>Légende de la photo 3</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/manifestation/photo4.jpg" alt="Photo 4" class="lightbox-img">
-      <figcaption>Légende de la photo 4</figcaption>
-    </figure>
-
-  </div>
-</div>
-
-<!-- Lightbox -->
-<div id="lightbox">
-  <span id="lightbox-close">&times;</span>
-  <img id="lightbox-img" src="" alt="">
-  <p id="lightbox-caption"></p>
+  <p>expositions temporaires, évènements culturels, journée du patrimoine, animations...A complèter </p>
 </div>
 
 <footer>
   museejeangrossier@gmail.com — 06 21 22 78 72
 </footer>
-
-<script>
-  const images = document.querySelectorAll('.lightbox-img');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const lightboxCaption = document.getElementById('lightbox-caption');
-  const lightboxClose = document.getElementById('lightbox-close');
-
-  images.forEach(img => {
-    img.addEventListener('click', () => {
-      lightbox.style.display = 'flex';
-      lightboxImg.src = img.src;
-      lightboxCaption.textContent = img.parentElement.querySelector('figcaption').textContent;
-    });
-  });
-
-  lightboxClose.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-  });
-
-  lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-      lightbox.style.display = 'none';
-    }
-  });
-</script>
 
 </body>
 </html>
