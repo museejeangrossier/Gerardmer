@@ -183,3 +183,135 @@ footer {
     .titre-histoire { font-size: 2em; }
     .texte-histoire { font-size: 1.05em; line-height: 1.7; }
 }
+.annee-titre {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 40px 0 20px;
+  font-family: "Merriweather", serif;
+}
+
+.expo {
+  background: #f8f8f8;
+  border-left: 5px solid #34495e;
+  padding: 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.25s, transform 0.15s;
+}
+
+.expo:hover {
+  background: #ececec;
+  transform: translateX(4px);
+}
+
+.expo-titre {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.expo-desc {
+  font-size: 1em;
+  color: #555;
+}
+
+.expo-gallery-hidden {
+  display: none;
+  margin: 15px 0 30px;
+}
+
+.expo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.expo-gallery img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  transition: transform 0.2s;
+}
+
+.expo-gallery img:hover {
+  transform: scale(1.03);
+}
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  background: #fafafa;
+  color: #222;
+}
+
+/* NAVIGATION */
+nav {
+  background: #34495e;
+  padding: 10px 0;
+}
+
+.nav-inner {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+/* PAGE MUSEE */
+.musee-wrapper {
+  max-width: 900px;
+  margin: 120px auto 60px;
+  padding: 20px;
+}
+
+.musee-wrapper h1 {
+  text-align: center;
+  font-size: 2.6em;
+  margin-bottom: 20px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.extrait {
+  background: #f8f8f8;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 6px solid #34495e;
+  border-radius: 6px;
+}
+
+.extrait h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.extrait h3 {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.extrait ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  margin-top: 40px;
+}
+
