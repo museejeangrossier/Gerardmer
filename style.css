@@ -314,4 +314,11 @@ footer {
   background: #eee;
   margin-top: 40px;
 }
-
+.formulaire-idees textarea {
+min-height: 350px;
+}
+.formulaire-idees button {
+padding: 18px 40px;
+font-size: 20px;
+font-weight: bold;
+}
