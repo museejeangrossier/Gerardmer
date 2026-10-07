@@ -1,58 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact — Arts et Traditions Gérômois</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Contact — Arts et Traditions Gérômois</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+ 
+<style>
+.formulaire-contact {
+max-width: 800px;
+margin: 20px auto;
+padding: 25px;
+background: #f8f8f8;
+border-left: 5px solid #34495e;
+border-radius: 6px;
+}
+ 
+.formulaire-contact label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+ 
+.formulaire-contact input {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+box-sizing: border-box;
+}
+ 
+.formulaire-contact textarea {
+width: 700px;
+height: 350px;
+}
+</style>
 </head>
+ 
 <body>
-
+ 
 <nav>
-  <div class="nav-inner">
-    <a href="index.html">Accueil</a>
-    <a href="histoire.html">Notre Histoire</a>
-    <a href="manifestations.html">Programmes Culturels</a>
-    <a href="vosidees.html">Vos Idées</a>
-    <a href="musee.html">Nos actions</a>
-    <a href="soutiens.html">Nos soutiens</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="contact.html">Contact</a>
-  </div>
+<div class="nav-inner">
+<a href="index.html">Accueil</a>
+<a href="histoire.html">Notre Histoire</a>
+<a href="manifestations.html">Programmes Culturels</a>
+<a href="vosidees.html">Vos Idées</a>
+<a href="musee.html">Nos actions</a>
+<a href="soutiens.html">Nos soutiens</a>
+<a href="quiz.html">Quiz</a>
+<a href="contact.html">Contact</a>
+</div>
 </nav>
-
+ 
 <div class="container">
-  <h1>Contact</h1>
-  <p>Pour toute question, proposition ou partenariat, contactez-nous :</p>
-
-  <p><strong>Email :</strong> museejeangrossier@gmail.com</p>
-  <p><strong>Téléphone :</strong> 06 21 22 78 72</p>
-
- <form style="max-width:600px; margin:20px auto; text-align:left;">
-  <p style="color:#555; font-size:14px;">
-    Le formulaire sera bientôt disponible.  
-    En attendant, vous pouvez nous écrire à :
-    <a href="mailto:museejeanggrossie@gmail.com">museejeanggrossie@gmail.com</a>
-  </p>
-
-  <label for="nom">Nom</label>
-  <input id="nom" type="text" disabled style="width:100%; padding:10px; margin:8px 0;">
-
-  <label for="email">Email</label>
-  <input id="email" type="email" disabled style="width:100%; padding:10px; margin:8px 0;">
-
-  <label for="message">Message</label>
-  <textarea id="message" rows="5" disabled style="width:100%; padding:10px; margin:8px 0;"></textarea>
-
-  <button disabled style="background:#ccc; color:#666; border:none; padding:10px 16px; border-radius:4px;">
-    Formulaire en cours d’activation
-  </button>
+ 
+<h1>Contact</h1>
+ 
+<p>
+Pour toute question, proposition de partenariat, demande d'information
+ou prise de contact avec l'association Arts et Traditions Populaires Gérômois,
+utilisez le formulaire ci-dessous.
+</p>
+ 
+<div class="formulaire-contact">
+ 
+<form action="https://formspree.io/f/xeaejvya" method="POST">
+ 
+<input type="hidden" name="Origine" value="Contact">
+ 
+<p>
+<label for="nom">Nom et prénom</label>
+<input type="text" id="nom" name="Nom" required>
+</p>
+ 
+<p>
+<label for="email">Adresse e-mail</label>
+<input type="email" id="email" name="Email" required>
+</p>
+ 
+<p>
+<label for="sujet">Sujet</label>
+<input type="text" id="sujet" name="Sujet" required>
+</p>
+ 
+<p>
+<label for="message">Votre message</label>
+ 
+<textarea
+id="message"
+name="Message"
+rows="15"
+required
+style="width:700px; height:350px;">
+</textarea>
+</p>
+ 
+<p>
+<button
+type="submit"
+style="padding:20px 50px; font-size:22px; font-weight:bold;">
+Envoyer votre message
+</button>
+</p>
+ 
 </form>
-
-
+ 
+</div>
+ 
+</div>
+ 
 <footer>
-  museejeangrossier@gmail.com — 06 21 22 78 72
+museejeangrossier@gmail.com — 06 21 22 78 72
 </footer>
-
+ 
 </body>
 </html>
